@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  src: url('./fonts/Kalam-Bold.ttf') format('truetype'),
+       url('./fonts/Kalam-Light.ttf') format('truetype'),
+       url('./fonts/Kalam-Regular.ttf') format('truetype');
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #ffebbb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-start; /* Align items to the start of the flex container */
+  justify-content: center;
+  font-size: calc(25px + 2vmin);
+  color: #5f2277;
+  /*position: fixed; /* Fix the header position */
+  /*top: 50%; /* Center vertically */
+  padding: 20px; /* Add some padding */
+}
+
+.inline-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto; /* Center the list horizontally */
+  margin-bottom: 20px;
+  font-size: 25px;
+  justify-content: center; /* Center the list items */
+  /* width: 80%; */
+}
+
+.inline-list li {
+  font-family: 'Kalam-Bold', sans-serif;
+  margin: 30px; /* Equal margin on both sides */
+}
+
+h1 {
+  font-family: 'Kalam', sans-serif;
+  margin-top: 20px;
+}
+
+p {
+  font-family: 'Kalam', sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-weight: 700;
+  background:  #FEEDF0;
+  color: blueviolet;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid blueviolet;
+  border-right: 2px solid blueviolet;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transition-duration: 1s;
+  transition-property: 'border-top', 'border-left', 'border-bottom', 'border-right', 'box-shadow';
+  font: 'Kalam', sans-serif;
+  margin-top: 20px;
+}
+
+.button:hover {
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px;
+}
+
+/* Navigation element */
+.nav {
+  position: fixed;
+  right: 3%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.3s ease;
+  border: 2px solid #000; 
+  background-color: #b0aeae8c;
+  padding: 4px; 
+  border-radius: 20px; 
+}
+
+/* Position of the navigation element when scrolled */
+.nav-scroll {
+  top: 5%;
+  transform: translate(-50%, 0);
+}
+
+/* Grouping navigation links */
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Margin for list items */
+.nav ul li {
+  margin: 5px 0;
+}
+
+/* Text decoration */
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font: 'Kalam', sans-serif;
+  font-weight: 'semi-bold';
+  font-weight: 600;
+}
+
+html {
+  font-family: 'Kalam', sans-serif; /* Apply font-family globally */
+}
+
+
+/* @font-face {
+  font-family: 'Dosis';
+    src: url('./fonts/Dosis-Bold.ttf') format('truetype'),
+        url('./fonts/Dosis-ExtraBold.ttf') format('truetype'),
+        url('./fonts/Dosis-ExtraLight.ttf') format('truetype'),
+        url('./fonts/Dosis-Light.ttf') format('truetype'),
+        url('./fonts/Dosis-Medium.ttf') format('truetype'),
+        url('./fonts/Dosis-Regular.ttf') format('truetype'),
+        url('./fonts/Dosis-SemiBold.ttf') format('truetype');
+} */
