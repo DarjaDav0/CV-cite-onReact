@@ -1,16 +1,23 @@
 import React from 'react';
 import './Aboutsection.css';
+import profile from './profile.jpg';
 
 class Aboutsection extends React.Component {
-    render() {return (
-        <div className="Aboutsection">
-            <h1 className="Aboutsection-header">About Me</h1>
-                <p>
-                    This is a simple React app created to study and flex. 
-                    It includes a simple yobas and a button that copies an email to the clipboard. 
-                    Other buttons are just links to my social media profiles.
-                    The navigation bar will hide when you scroll down and show when you scroll up.
-                </p>
+    render() {
+        return (
+            <div className="Aboutsection">
+                <h2>About Me</h2>
+                <div className="Aboutsection-content">
+                    <img
+                        src={profile}
+                        alt="Profile picture of Darja Davydova"
+                        className="Aboutsection-img"
+                    />
+                    <p>
+                        Hi! I'm Darja Davydova, an IT student at Lapland UAS. 
+                        I'm passionate about web development and learning new things.
+                    </p>
+                </div>
             </div>
         );
     }

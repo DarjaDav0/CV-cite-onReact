@@ -1,15 +1,22 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import ImageSlideshow from './ImageSlideshow';
 import Aboutsection from './Aboutsection';
 
 /* Import content from Canva CV here
 Change places of skills (more important) and about where I talk about hobbies */
 
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    console.log('Copied to clipboard:', text);
+  }).catch(err => {
+    console.error('Failed to copy to clipboard:', err);
+  });
+}
+
 function App() {
   const handleCopyEmail = (e) => {
     e.preventDefault(); // Prevent default mailto behavior
-    ImageSlideshow.copyToClipboard('darja.davydova.dd@gmail.com'); // Call the static method
+    copyToClipboard('darja.davydova.dd@gmail.com');
   };
 
   useEffect(() => {
@@ -64,7 +71,7 @@ function App() {
       <header className="App-header">
         <h1>Darja Davydova</h1>
         <section id="intro">
-          <a>Tieto- ja viestintätekniikan opiskelija Lapin AMK:ssa</a>
+          <a>Welcome to my web CV<br />IT Student at Lapland UAS</a>
           <ul className="inline-list">
             <li>
               <a 

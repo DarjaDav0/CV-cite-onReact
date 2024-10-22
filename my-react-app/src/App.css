@@ -19,12 +19,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /*align-items: flex-start; /* Align items to the start of the flex container */
   justify-content: center;
   font-size: calc(25px + 2vmin);
   color: #5f2277;
-  /*position: fixed; /* Fix the header position */
-  /*top: 50%; /* Center vertically */
   padding: 20px; /* Add some padding */
 }
 
@@ -32,16 +29,16 @@
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0 auto; /* Center the list horizontally */
+  margin: 0 auto; 
   margin-bottom: 20px;
   font-size: 25px;
-  justify-content: center; /* Center the list items */
+  justify-content: center; 
   /* width: 80%; */
 }
 
 .inline-list li {
   font-family: 'Kalam-Bold', sans-serif;
-  margin: 30px; /* Equal margin on both sides */
+  margin: 30px; 
 }
 
 h1 {
