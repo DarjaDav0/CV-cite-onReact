@@ -22,7 +22,9 @@
   justify-content: center;
   font-size: calc(25px + 2vmin);
   color: #5f2277;
-  padding: 20px; /* Add some padding */
+  padding: 20px;
+  background-image: repeating-radial-gradient(  #E6CE8C 80%,#FFE49B 90%,#ffebbb);
+  background-size: 65px 65px;
 }
 
 .inline-list {
