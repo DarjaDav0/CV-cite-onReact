@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './App.css';
 import Aboutsection from './Aboutsection';
+import Skills from './skills.js';
+import './skills.css';
 
 /* Import content from Canva CV here
 Change places of skills (more important) and about where I talk about hobbies */
@@ -14,6 +16,7 @@ function copyToClipboard(text) {
 }
 
 function App() {
+
   const handleCopyEmail = (e) => {
     e.preventDefault(); // Prevent default mailto behavior
     copyToClipboard('darja.davydova.dd@gmail.com');
@@ -37,8 +40,6 @@ function App() {
 
   useEffect(() => {
     const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav ul li a');
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -52,7 +53,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.5 } // Adjust this value as needed
+      { threshold: 0.5 } 
     );
 
     sections.forEach((section) => {
@@ -69,8 +70,8 @@ function App() {
   return (
     <div className="App text-center">
       <header className="App-header">
+        <section id="intro">  
         <h1>Darja Davydova</h1>
-        <section id="intro">
           <a>Welcome to my web CV<br />IT Student at Lapland UAS</a>
           <ul className="inline-list">
             <li>
@@ -99,8 +100,7 @@ function App() {
         <Aboutsection />
       </section>
       <section id="skills">
-        <h2>Skills</h2>
-        <p>Content for section 3...</p>
+        <Skills/>
       </section>
     </div>
   );

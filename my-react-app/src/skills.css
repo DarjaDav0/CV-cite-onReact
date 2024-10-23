@@ -1,0 +1,58 @@
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skills-category {
+    flex: 1 1 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.skills-category h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill dt {
+    flex: 1;
+}
+
+.skill dd {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.skill i {
+    font-style: normal;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #ccc;
+}
+
+.skill i.filled {
+    color: yellow;
+}
+
+.skill i:hover,
+.skill i:hover ~ i {
+    color: yellow;
+}
+
+@media (max-width: 600px) {
+    .skills-category {
+        flex: 1 1 100%;
+    }
+}
