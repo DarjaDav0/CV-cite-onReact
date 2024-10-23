@@ -1,6 +1,7 @@
 
 .Aboutsection {
-  background-color: #e0ffcd;
+  background-color: #ffebbb;
+  margin-bottom: auto;
   display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: auto 1fr;
@@ -20,6 +21,7 @@
 
 .Aboutsection-grid {
   display: contents;
+  
 }
 
 .Aboutsection-img-container {

@@ -72,7 +72,7 @@ function App() {
       <header className="App-header">
         <section id="intro">  
         <h1>Darja Davydova</h1>
-          <a>Welcome to my web CV<br />IT Student at Lapland UAS</a>
+          <a>Welcome to my web CV</a>
           <ul className="inline-list">
             <li>
               <a 

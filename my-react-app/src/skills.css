@@ -1,41 +1,63 @@
 .skills-section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffebbb;
+    margin-top: auto;
+}
+
+.skills-section h2 {
+    font: 'Dosis', sans-serif;
+    color: #5f2277;
+    font-size: 50px;
+    text-align: center;
+}
+
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
+    justify-content: center;
 }
 
 .skills-category {
     flex: 1 1 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #7B3F93;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #f9f9f9;
+    
 }
 
 .skills-category h3 {
     text-align: center;
     margin-bottom: 10px;
+    color:#5f2277;
 }
 
 .skill {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 10px;
+    flex-wrap: wrap; 
 }
 
-.skill dt {
+.skill dt { /*Skill name*/
     flex: 1;
+    text-align: left;
+    margin-left: 70px;
 }
 
-.skill dd {
+.skill dd { /*Skill level */
     flex: 2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-left: 30px;
 }
 
-.skill i {
+.skill i { /*Representation of every star */
     font-style: normal;
     cursor: pointer;
     margin-left: 5px;
@@ -43,12 +65,12 @@
 }
 
 .skill i.filled {
-    color: yellow;
+    color: #8A51A0;
 }
 
 .skill i:hover,
 .skill i:hover ~ i {
-    color: yellow;
+    color: #6D3085;
 }
 
 @media (max-width: 600px) {

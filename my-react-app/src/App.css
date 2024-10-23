@@ -9,11 +9,6 @@
        url('./fonts/Kalam-Regular.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #ffebbb;
   min-height: 100vh;
